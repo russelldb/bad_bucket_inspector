@@ -1,0 +1,6 @@
+./rebar get-deps
+./rebar compile
+[make tea, drink tea]
+./rebar skip-deps=true escriptize
+./bi my_buket riak@127.0.0.1
+
