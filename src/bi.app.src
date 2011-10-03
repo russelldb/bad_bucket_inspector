@@ -1,0 +1,12 @@
+{application, bi,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { bi_app, []}},
+  {env, []}
+ ]}.
