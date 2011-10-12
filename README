@@ -1,6 +1,10 @@
-In response to a question[1] on the mailing list about scripting read repair, I wrapped this[2] function contrib in an escript using rebar's escriptize feature.
+In response to a question[1] on the mailing list about scripting read repair, 
+I wrapped this[2] function contrib in an escript using rebar's escriptize feature.
 
-NOTE: this is generally a bad idea, and there are no doubt much better ways to script read repair, I just did it as some throw-away code as an example. Beware: it downloads *and compiles* ALL of riak_kv as a dependency, m'kay.
+NOTE: this is generally a bad idea, and there are no doubt much better ways to script read repair, 
+I just did it as some throw-away code as an example. 
+
+Beware: it downloads *and compiles* ALL of riak_kv as a dependency, m'kay.
 
 Far better just to attach and run the function contrib in the console.
 
