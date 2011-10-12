@@ -1,6 +1,14 @@
+In response to a question[1] on the mailing list about scripting read repair, I wrapped this[2] function contrib in an escript using rebar's escriptize feature.
+
+NOTE: this is generally a bad idea, and there are no doubt much better ways to script read repair, I just did it as some throw-away code as an example. Beware: it downloads *and compiles* ALL of riak_kv as a dependency, m'kay.
+
+Far better just to attach and run the function contrib in the console.
+
 ./rebar get-deps
 ./rebar compile
 [make tea, drink tea]
 ./rebar skip-deps=true escriptize
 ./bi my_buket riak@127.0.0.1
 
+[1] http://lists.basho.com/pipermail/riak-users_lists.basho.com/2011-October/005890.html
+[2] http://contrib.basho.com/bucket_inspector.html
